@@ -1,13 +1,10 @@
 {% extends 'base.html' %}
-
+{% block links %}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+{% endblock %}
 {%block content%}
 <div>
     {%include 'nav.html'%}
     <h2>Ola, mundo</h2>
-    
-</div>
-<div>
-
-
 </div>
 {% endblock %}

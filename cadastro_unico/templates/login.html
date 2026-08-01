@@ -1,9 +1,11 @@
 {% extends 'base.html'%}
-
+{% block links %}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">
+{% endblock %}
 {% block content%}
-<divc classe="container">
+<div class="login-contaener">
     <form action="">
-        <h1>Login cadastro unico</h1>
+        <h1>cadastro unico</h1>
         <div class="input-box">
             <input type="text" placeholder="Usuário">
             <i class="fa-solid fa-user"></i>
@@ -11,7 +13,17 @@
         <div class="input-box">
             <input type="password" placeholder="Senha">
             <i class="fa-solid fa-lock"></i>
-
+        </div>
+        <div class="remember-forgot">
+            <label for="">
+                <input type="checkbox">
+                Lembra senha
+            </label>
+            <a href="#">Esqueci senha</a>
+        </div>
+        <button type="submit" class="login">Login</button>
+        <div class="register">
+            <p>Nao tem uma conta? <a href="#">Cadstra-se</a></p>
         </div>
     </form>
 </div>
