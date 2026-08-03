@@ -35,6 +35,33 @@ header{
     border-radius: 10px;
     padding: 5PX 15px;
 }
+.card {
+  width: 500px;
+  margin: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.card-texto{
+    margin: 10px;
+    padding: 10px;
+    background: #31D5DE;
+    display: flex;
+    justify-content: center;
+}
+.card-texto a{
+    color: #fff;
+}
+.card-texto a:hover{
+    color: #fff;
+    color: #1A081F;
+    font-weight: bold;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
 @media (max-width:800px){
     li, a{
         font-size: 15px;

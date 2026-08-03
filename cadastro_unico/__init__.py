@@ -10,4 +10,4 @@ app.config["SQLALCHEMY_TRACK_PROIFICATIONS"] = False
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
-from cadastro_unico.views import home ,login
+from cadastro_unico.views import home ,login,agendar,cadastro

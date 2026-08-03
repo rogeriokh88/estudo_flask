@@ -1,0 +1,65 @@
+{% extends 'base.html'%}
+{% block links %} <link rel="stylesheet" href="{{url_for('static',filename='css/Cadastro.css')}}">{% endblock %}
+{% block content%}
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <i class="fa-solid fa-user-plus"></i>
+            <h2>Criar Conta</h2>
+            <p>Informe seus dados pessoais para cadastro</p>
+        </div>
+
+        <div class="card-body">
+            <form action="/cadastrar" method="POST">
+                
+                <!-- Nome e Sobrenome Lado a Lado -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sobrenome">Sobrenome</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-user-tag"></i>
+                            <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CPF -->
+                <div class="form-group">
+                    <label for="cpf">CPF</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-id-card"></i>
+                        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14" required>
+                    </div>
+                </div>
+
+                <!-- Data de Nascimento -->
+                <div class="form-group">
+                    <label for="data_nascimento">Data de Nascimento</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <input type="date" id="data_nascimento" name="data_nascimento" required>
+                    </div>
+                </div>
+
+                <!-- Botão de Envio -->
+                <button type="submit" class="btn-submit">
+                    <i class="fa-solid fa-user-check"></i> Finalizar Cadastro
+                </button>
+
+                <!-- Link para Login -->
+                <div class="footer-link">
+                    Já possui conta? <a href="{{url_for('login')}}">Fazer Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

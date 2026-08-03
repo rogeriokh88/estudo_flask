@@ -11,6 +11,13 @@ def home():
         }
     return render_template("index.html")
 
+@app.route("/agendar/")
+def agendar():
+    return render_template("agendar.html")
+
+@app.route("/cadastro/")
+def cadastro():
+    return render_template("cadastro.html")
 
 @app.route("/login/")
 def login():

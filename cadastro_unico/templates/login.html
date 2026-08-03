@@ -7,11 +7,11 @@
     <form action="">
         <h1>cadastro unico</h1>
         <div class="input-box">
-            <input type="text" placeholder="Usuário">
+            <input type="text" placeholder="CPF">
             <i class="fa-solid fa-user"></i>
         </div>
         <div class="input-box">
-            <input type="password" placeholder="Senha">
+            <input type="password" placeholder="Data de Nascimento">
             <i class="fa-solid fa-lock"></i>
         </div>
         <div class="remember-forgot">
@@ -23,7 +23,7 @@
         </div>
         <button type="submit" class="login">Login</button>
         <div class="register">
-            <p>Nao tem uma conta? <a href="#">Cadstra-se</a></p>
+            <p>Nao tem uma conta? <a href="{{url_for('cadastro')}}">Cadstra-se</a></p>
         </div>
     </form>
 </div>

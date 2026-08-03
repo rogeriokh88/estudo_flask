@@ -3,8 +3,13 @@
     <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
 {% endblock %}
 {%block content%}
+{% include 'nav.html' %}
 <div>
-    {%include 'nav.html'%}
-    <h2>Ola, mundo</h2>
+  <div class="card">
+    <img src="{{url_for('static', filename='img/cadastro_unico.png')}}" alt="">
+    <div class="card-texto">
+        <a href="{{url_for('agendar')}}"><h3>Cadastro Único</h3></a>
+    </div>
+  </div>
 </div>
 {% endblock %}

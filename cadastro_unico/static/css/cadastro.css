@@ -1,0 +1,161 @@
+:root {
+            --primary-color: #0c326f;
+            --primary-hover: #082452;
+            --bg-color: #f4f6f9;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-color: #dcdfe6;
+            --focus-ring: rgba(12, 50, 111, 0.2);
+        }
+
+       
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1b5e20 100%);
+            color: #ffffff;
+            padding: 32px 24px;
+            text-align: center;
+        }
+
+        .card-header i {
+            font-size: 2.5rem;
+            color: #ffc107;
+            margin-bottom: 8px;
+        }
+
+        .card-header h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .card-header p {
+            font-size: 0.875rem;
+            opacity: 0.85;
+        }
+
+        .card-body {
+            padding: 32px 28px;
+        }
+
+        /* Flexbox para colocar Nome e Sobrenome lado a lado */
+        .form-row {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 18px;
+        }
+
+        .form-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 18px;
+        }
+
+        .form-row .form-group {
+            margin-bottom: 0;
+        }
+
+        label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #444;
+            margin-bottom: 6px;
+        }
+
+        .input-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .input-wrapper i {
+            position: absolute;
+            left: 14px;
+            color: #888;
+            font-size: 1rem;
+            pointer-events: none;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 12px 14px 12px 42px;
+            font-size: 0.95rem;
+            color: #333;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            outline: none;
+            transition: all 0.2s ease;
+            background-color: #fafafa;
+        }
+
+        input[type="text"]:focus,
+        input[type="date"]:focus {
+            border-color: var(--primary-color);
+            background-color: #ffffff;
+            box-shadow: 0 0 0 4px var(--focus-ring);
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 14px;
+            margin-top: 10px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-submit:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-submit:active {
+            transform: scale(0.99);
+        }
+
+        .footer-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.875rem;
+            color: #666;
+        }
+
+        .footer-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Ajuste para dispositivos móveis */
+        @media (max-width: 480px) {
+            .form-row {
+                flex-direction: column;
+                gap: 18px;
+            }
+        }
