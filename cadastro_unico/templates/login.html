@@ -2,7 +2,9 @@
 {% block links %}
     <link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">
 {% endblock %}
+
 {% block content%}
+
 <div class="login-contaener">
     <form action="">
         <h1>cadastro unico</h1>
@@ -23,7 +25,7 @@
         </div>
         <button type="submit" class="login">Login</button>
         <div class="register">
-            <p>Nao tem uma conta? <a href="{{url_for('cadastro')}}">Cadstra-se</a></p>
+            <p>Nao tem uma conta? <a href="{{url_for('cadastro_usuario')}}">Cadastra-se</a></p>
         </div>
     </form>
 </div>

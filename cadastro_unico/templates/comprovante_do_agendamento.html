@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Comprovantes {% endblock %}
+
+{% block links %}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+{% endblock %}
+
+{% include 'nav.html'%}
+
+{% block content %}
+
+    <div>
+        <div class="card">
+            
+        <div class="card-texto">
+            <a href="{{url_for('agendar')}}"><h3>Cadastro Único</h3></a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
