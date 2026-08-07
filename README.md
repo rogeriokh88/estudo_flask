@@ -7,22 +7,22 @@ Tecnologias:
 ____________________________________________
                 Front-end
 ____________________________________________
-HTML5, 
-,CSS3
-JavaScript(Vanilla) ,
+HTML5 , 
+CSS3 ,
+JavaScript ,
 Font Awesome (icones) 
 ____________________________________________
                 Back-end
 ____________________________________________
-Python,
-Flask,
-SQLAIchemy,
-JWT (Login),
+Python ,
+Flask ,
+SQLAIchemy ,
+JWT (Login) ,
 BCrypt (criptografia das senhas)
 ____________________________________________
               Banco de Dados
 ____________________________________________
-Inicialmente: SQLite,
+Inicialmente: SQLite ,
 Depois: PostgreSQL
 
 
