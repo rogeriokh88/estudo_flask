@@ -1,0 +1,1 @@
+from cadastro_unico import app

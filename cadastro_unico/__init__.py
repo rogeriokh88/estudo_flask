@@ -11,3 +11,4 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
 from cadastro_unico.views import home ,login,agendar,cadastro_usuario,relatorio,comprovante
+from cadastro_unico.models import Cadastro_usuario
